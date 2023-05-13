@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad-By-Neon</title>
+    <link rel="stylesheet" href="bootstrape.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-container container">
+    <div class="title">
+
+            <input type="text" id="textheader" class="textheader" placeholder="Enter title here">
+      
+    </div>
+
+    <div class="option">
+    
+        <button><b>B</b></button>
+        <button style="text-decoration: underline;">U</button>
+        <button><i>I</i></button>
+        <button><img src="images/align-left.png" width="20px" alt=""></button>
+        <button><img src="images/format.png" width="20px" alt=""></button>
+        <button><img src="images/align-right.png" width="20px" alt=""></button>
+        <select name="text-transform" id="texttransform">
+            <option value="Aa"selected disabled>Aa</option>
+            <option value="uppercase" >UPPERCASE</option>
+            <option value="uppercase" >lowercase</option>
+            <option value="uppercase" >Captialized</option>
+            <!-- text transform options -->
+            <option value="uppercase" ></option>
+        </select>
+        <select name="font family" id="fontFamily">
+            <option value="Font Family" selected disabled>Font Family</option>
+            <!-- fonts options -->
+            <!--  -->
+        </select>
+        <input type="color" >
+        <select name="font-size" id="fontSize">
+            <option value="fontSize" selected disabled>Font-size</option>
+            <!-- font size options -->
+            <!--  -->
+        </select>
+
+    
+
+    </div>
+
+    <!-- download button -->
+
+   <div class="download">
+    <button id="download" class="btn btn-success">Download</button>
+   </div> 
+    <hr class="hr">
+
+<div class="content">
+    <textarea name="text-content" id="textContent" class="textcontent"></textarea>
+</div>
+<hr class="hr">
+
+
+
+</div>
+
+    
+
+
+
+
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/b4fc311639.js" crossorigin="anonymous"></script>
+    <script src="bootstrape.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
