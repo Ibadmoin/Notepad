@@ -9,7 +9,9 @@ body{
     background-color: #fff ;
     min-width: 300px;
 }
-
+.main-container{
+    border: 1px solid #035bff;
+}
 .title{
     background: #035bff;
     width: 100%;
@@ -41,6 +43,7 @@ body{
     background: #a7a7a7;
     width: 100%;
     height: 80px;
+    padding: 10px;
  
 }
 .row{
@@ -57,8 +60,26 @@ button {
    margin-top: 10px;
    margin-bottom: 10px;
 }
+
+button:hover{
+    opacity: 0.9;
+}
 select{
     outline: none;
+}
+select option:hover {
+    background-color: red !important;
+}
+
+
+.hr{
+  
+    border: 1px solid #035bff;
+}
+
+.text-transform{
+    width: 45px;
+    height: 30px;
 }
 .option{
    display: flex;
@@ -81,6 +102,7 @@ select{
     height: 40px !important;
     text-align: center !important;
     padding-bottom: 10px !important;
+    
 }
 
 
@@ -111,6 +133,49 @@ select{
 }
 
 
+/* social */
+.social{
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.social p {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-left: 1%;
+}
+
+.social a  {
+text-decoration: none;
+margin-left:1% ;
+/* margin-right: 2%; */
+
+}
+.social a  i {
+    font-size: 30px;
+    color: #035bff;
+    transition: .1s ease-in;
+
+}
+.social a i:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.rights{
+    text-align: center;
+  
+}
+.rights p {
+    text-align: center;
+    font-weight: 600;
+}
+.rights i {
+    color: #035bff;
+}
 /* left work
 1)hovers on btns
 2)select options

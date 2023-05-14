@@ -12,19 +12,20 @@
 <div class="main-container container">
     <div class="title">
 
-            <input type="text" id="textheader" class="textheader" placeholder="Enter title here">
+            <input type="text" id="fileName" class="textheader" placeholder="Enter title here">
       
     </div>
 
     <div class="option">
     
-        <button><b>B</b></button>
-        <button style="text-decoration: underline;">U</button>
-        <button><i>I</i></button>
-        <button><img src="images/align-left.png" width="20px" alt=""></button>
-        <button><img src="images/format.png" width="20px" alt=""></button>
-        <button><img src="images/align-right.png" width="20px" alt=""></button>
-        <select name="text-transform" id="texttransform">
+        <button onclick="changestyle('b')"><b>B</b></button>
+        <button onclick="changestyle('u')" style="text-decoration: underline;">U</button>
+        <button onclick="changestyle('i')"><i>I</i></button>
+        <button onclick="changestyle('n')">N</button>
+        <button onclick=" changealign('aL')"><img src="images/align-left.png" width="20px" alt=""></button>
+        <button onclick=" changealign('aC')"><img src="images/format.png" width="20px" alt=""></button>
+        <button onclick=" changealign('aR')"><img src="images/align-right.png" width="20px" alt=""></button>
+        <select name="text-transform" class="text-transform" id="texttransform">
             <option value="Aa"selected disabled>Aa</option>
             <option value="uppercase" >UPPERCASE</option>
             <option value="uppercase" >lowercase</option>
@@ -37,10 +38,26 @@
             <!-- fonts options -->
             <!--  -->
         </select>
-        <input type="color" >
+        <input id="textColor" oninput="updateTextColor()" type="color" >
         <select name="font-size" id="fontSize">
-            <option value="fontSize" selected disabled>Font-size</option>
+            <!-- <option value="fontSize" selected disabled>Font-size</option> -->
             <!-- font size options -->
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+            <option value="18">18</option>
+            <option value="20">20</option>
+            <option value="22">22</option>
+            <option value="24">24</option>
+            <option value="26">26</option>
+            <option value="28">28</option>
+            <option value="36">36</option>
+            <option value="48">48</option>
+            <option value="72">72</option>
             <!--  -->
         </select>
 
@@ -51,7 +68,7 @@
     <!-- download button -->
 
    <div class="download">
-    <button id="download" class="btn btn-success">Download</button>
+    <button id="download" onclick="downloadfile()" class="btn btn-success">Download</button>
    </div> 
     <hr class="hr">
 
@@ -60,7 +77,17 @@
 </div>
 <hr class="hr">
 
+<div class="social">
+    <p class="follow-tag">Follow for more</p>
+    <a href="https://www.github.com/ibadmoin" class=""><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/ibad-moin-2b43a8253/" class=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://www.github.com/ibadmoin" class=""><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100008452442648" class=""><i class="fa-brands fa-facebook"></i></a>
+</div>
 
+<div class="rights">
+    <p><i class="fa-sharp fa-solid fa-copyright"></i> All rights reserved by Ibad Moin </p>
+</div>
 
 </div>
 
