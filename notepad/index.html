@@ -25,21 +25,25 @@
         <button onclick=" changealign('aL')"><img src="images/align-left.png" width="20px" alt=""></button>
         <button onclick=" changealign('aC')"><img src="images/format.png" width="20px" alt=""></button>
         <button onclick=" changealign('aR')"><img src="images/align-right.png" width="20px" alt=""></button>
-        <select name="text-transform" class="text-transform" id="texttransform">
-            <option value="Aa"selected disabled>Aa</option>
-            <option value="uppercase" >UPPERCASE</option>
-            <option value="uppercase" >lowercase</option>
-            <option value="uppercase" >Captialized</option>
+        <select onchange="textTransform()"  name="text-transform" class="text-transform" id="textTransform">
+         
             <!-- text transform options -->
-            <option value="uppercase" ></option>
+            <option  value="Aa"selected disabled>Aa</option>
+            <option value="uppercase" >UPPERCASE</option>
+            <option value="lowercase" >lowercase</option>
+            <option value="capitalize" >Captialized</option>
         </select>
-        <select name="font family" id="fontFamily">
+        <select onchange="fontFamily()" name="font family" id="fontFamily">
             <option value="Font Family" selected disabled>Font Family</option>
             <!-- fonts options -->
+            <option value="Arial">Arial</option>
+            <option value="Segoe UI">Segoe UI</option>
+            <option value="poppins">Poppins</option>
+
             <!--  -->
         </select>
         <input id="textColor" oninput="updateTextColor()" type="color" >
-        <select name="font-size" id="fontSize">
+        <select onchange="fontSize()" name="font-size" id="fontSize">
             <!-- <option value="fontSize" selected disabled>Font-size</option> -->
             <!-- font size options -->
             <option value="8">8</option>

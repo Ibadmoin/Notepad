@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(./fonts/poppins/Poppins-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +24,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
     
 }
@@ -67,9 +73,7 @@ button:hover{
 select{
     outline: none;
 }
-select option:hover {
-    background-color: red !important;
-}
+
 
 
 .hr{
@@ -90,6 +94,7 @@ select option:hover {
    /* background: #000; */
    height: 100%;
    padding-bottom: 10px;
+  
   
 }
 
@@ -172,6 +177,7 @@ margin-left:1% ;
 .rights p {
     text-align: center;
     font-weight: 600;
+
 }
 .rights i {
     color: #035bff;
@@ -183,3 +189,5 @@ margin-left:1% ;
 4)style hrs class = hr
 
  */
+
+ 
